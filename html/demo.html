@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Demo</title>
+    <link rel="stylesheet" href="../css/demo.css">
+    <script type="module" src="../javascript/demo_crud.js"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="content-wrapper">
+            <h1>Firebase CRUD Example</h1>
+            <button onclick="addDocument()">Add Document</button>
+            <button onclick="getDocuments()">Get Documents</button>
+            <button onclick="updateDocument('DOCUMENT_ID')">Update Document</button>
+            <button onclick="deleteDocument('DOCUMENT_ID')">Delete Document</button>
+            <div id="content"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+
+</html>

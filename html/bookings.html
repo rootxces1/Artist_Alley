@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="module" src="../javascript/utilities.js"></script>
+<!-- by Soud -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Booking</title>
+
+    <link rel="stylesheet" href="../css/bookings.css">
+    <!-- <link rel="stylesheet" href="../css/search-bar.css"> -->
+    <!-- <link rel="stylesheet" href="../css/headerstyle.css"> -->
+    <!-- <link rel="stylesheet" href="../css/main-footer.css"> -->
+
+    <script type="module" src="../javascript/utilities.js" defer></script>
+    <script type="module" src="../javascript/booking.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="search-container">
+            <form action="#">
+                <button class="search-close-btn" id="searchCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+
+                <label for="search">Search</label>
+                <div class="search-bar">
+
+                    <input type="search" name="search" id="search-input" placeholder="Search artists here">
+                    <button class="get-search" id="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <!-- <span class="fa-solid fa-rectangle-xmark"></span> -->
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <!-- booking content -->
+            <div class="booking-content-wrapper">
+                <div class="pending-view">
+                    <h3>Request Pending:</h3>
+                    <div id="bookings-pending">
+                        <!-- Booking items will be dynamically added here -->
+                    </div>
+                </div>
+                <div class="aceepted-view">
+                    <h3>My Bookings:</h3>
+                    <div id="bookings-accepted">
+                        <!-- Booking items will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>

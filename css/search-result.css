@@ -1,0 +1,274 @@
+/*Carlos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+:root {
+
+    --gradient: linear-gradient(to bottom, #111415, #363a47);
+    --primary-clr: rgb(56, 56, 56);
+    --secondary-clr: #89023E;
+    --accent-clr: #F37F81;
+    --white-clr: white;
+    --blacl-clr: black;
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0;
+    line-height: 1.4;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+/* main--------------------- */
+
+main {
+    flex: 1;
+}
+
+.mainContent {
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: #797979 2px 5px 10px;
+    border-radius: 25px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(213, 213, 213);
+        box-shadow: #797979 2px 5px 10px;
+        border-radius: 25px;
+}
+
+.search-container {
+    display: none;
+}
+#search {
+    cursor: pointer;
+}
+
+.artist-descp {
+    align-self: flex-start;
+    flex: 1;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+#no-artist {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.artist-descp{
+    padding-bottom: 2rem;
+}
+
+.artist-descp img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* ------------------------------------------ */
+.artist-descp .artist-briefing {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.artist-descp .icons-grp {
+    text-align: end;
+    color: var(--secondary-clr);
+}
+
+.about-artist{
+    border-bottom: 2px solid var(--accent-clr);
+    padding-bottom: 1rem;
+}
+
+.artist-descp .about-artist ul li {
+    font-family: oswald;
+}
+
+.artist-descp .about-artist ul li span {
+    font-family: 'Nunito Sans';
+}
+
+.artist-descp .artist-perf h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.artist-descp .artist-perf p {
+    border-bottom: 1px solid var(--accent-clr);
+    padding-bottom: 1rem;
+}
+
+.artist-descp .artist-perf a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--secondary-clr);
+    width: 160px;
+    margin: auto;
+    color: var(--white-clr);
+    padding: .5rem;
+    border-radius: 25px;
+}
+
+.artist-descp .artist-perf a.check {
+    background-color: var(--accent-clr);
+    color: var(--white-clr);
+    padding: .5rem;
+    border-radius: 25px;
+    width: 160px;
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: 2rem;
+}
+
+.artist-work {
+    height: 100%;
+    width: 100%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.images img:nth-of-type(1) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: auto;
+}
+
+.artist-work .images img {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.albumBtn {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.albumBtn a {
+    background-color: var(--white-clr);
+    color: var(--blacl-clr);
+    border-radius: 25px;
+    padding: .5rem 2rem;
+
+}
+
+main .top-btn {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+main .top-btn img {
+    width: 40px;
+    height: auto;
+}
+
+.artist-perf {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+    .headerContent .navbar .menuBtn {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .headerContent .site-heading,
+    .headerContent .navbar {
+        grid-column: 1/span 2;
+        grid-row: 1/span 2;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        color: var(--white-clr);
+        margin-left: 1rem;
+    }
+
+    main {
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+    .mainContent{
+        gap: 0;
+        padding: 0;
+    }
+
+    .artist-work .images img {
+        border-radius: 20px;
+    }
+    .albumBtn {
+        bottom: 40px;
+        right: 30px;
+    }
+
+    .search-wrapper {
+        grid-template-columns: 2fr 3fr;
+        gap: 1.5rem;
+        grid-template-rows: 1fr;
+        box-shadow: unset;
+        border-radius: unset;
+        border: unset;
+    }
+
+    .artist-descp,
+    .artist-work{
+        box-shadow: #797979 2px 5px 10px;
+        border-radius: 25px;
+        padding: 1rem;
+        width: 95%;
+        height: 92%;
+        object-fit: cover; 
+    }
+
+    .artist-descp {
+        align-self: center;
+    }
+
+}

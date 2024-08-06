@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Alley</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/search-bar.css">
+    <script type="module" src="../javascript/homepage.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../src/Untitled-9.png" alt="Artist Alley Logo">
+                <span>artist alley</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../html/homepage.html" class="active">Home</a></li>
+                    <li><a href="../html/homepage.html">About us</a></li>
+                    <li><a href="../html/homepage.html">Book an artist</a></li>
+                    <li><a href="../html/homepage.html">Join our artists</a></li>
+                    <!-- <li><a id="nav-search" href="">Search<i class="fa-solid fa-magnifying-glass"></i></a></li> -->
+                    <li><a href="../html/login.html">Log In</a></li>
+                </ul>
+            </nav>
+
+            <div class="siderButton">
+                <button id="headerSiderButton"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <form action="#">
+                <button class="search-close-btn" id="searchCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+
+                <label for="search">Search</label>
+                <div class="search-bar">
+
+                    <input type="search" name="search" id="search" placeholder="Search artists here">
+                    <button class="get-search" id="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <!-- <span class="fa-solid fa-rectangle-xmark"></span> -->
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="bgColorDiv"></div>
+        <div class="contentWrapper">
+            <section>
+                <div class="hero">
+                    <div class="hero-text">
+                        <h1>FIND. <span style="color: #F1CECF;">BOOK.</span> CELEBRATE.</h1>
+                        <h2>artist alley awaits</h2>
+                        <div class="hero-image-in">
+                            <img class="img" src="../src/art-girl.png" alt="Artist">
+                        </div>
+                        <p>Find the perfect artist for your event with Artist Alley. Browse diverse talents, check
+                            availability, and book effortlessly to make your event unforgettable.</p>
+                        <a href="#" class="explore-button">Explore Now</a>
+                    </div>
+                    <div class="hero-image">
+                        <img class="img" src="../src/art-girl.png" alt="Artist">
+                    </div>
+                </div>
+                <section class="why-us-section">
+                    <div class="container">
+                        <h2>Why us?</h2>
+                        <div class="cards">
+                            <div class="card myCard01">
+                                <img src="../src/discover.png" alt="Discover">
+                                <h3>Discover</h3>
+                                <p>Discover incredible talent for your events.</p>
+                            </div>
+                            <div class="card myCard02">
+                                <img src="../src/book.png" alt="Book">
+                                <h3>Book</h3>
+                                <p>Book with Artist Alley for top talent.</p>
+                            </div>
+                            <div class="card myCard03">
+                                <img src="../src/organise.png" alt="Organize">
+                                <h3>Organize</h3>
+                                <p>Let us manage your calendar seamlessly.</p>
+                            </div>
+                            <div class="card myCard04">
+                                <img src="../src/enjoy.png" alt="Enjoy">
+                                <h3>Enjoy</h3>
+                                <p>Enjoy exceptional events curated for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="hero">
+                <h1>Any <span>event</span>, any <span>date</span>, our talent makes it truly <span>great</span>!</h1>
+
+            </section>
+            <section class="event-cards">
+                <div class="event-card bachelorette-card">
+                    <div class="card-content">
+                        <h2>Bachelorette parties</h2>
+                        <p>Celebrate your bachelorette with us! Fun, entertainment, and surprises for an unforgettable
+                            night.</p>
+                        <button>See details</button>
+                    </div>
+                </div>
+                <div class="event-card newyear-card">
+                    <div class="card-content">
+                        <h2>New Year’s Eve parties</h2>
+                        <p>Ring in the New Year with spectacular events, entertainment, and lasting memories!</p>
+                        <button>See details</button>
+                    </div>
+                </div>
+                <div class="event-card birthday-card">
+                    <div class="card-content">
+                        <h2>Birthday parties</h2>
+                        <p>Make your birthday unforgettable with tailored entertainment and joyous celebrations.</p>
+                        <button>See details</button>
+                    </div>
+                </div>
+                <div class="event-card corporate-card">
+                    <div class="card-content">
+                        <h2>Corporate parties</h2>
+                        <p>Elevate your corporate event with premium venues, entertainment, and seamless planning.</p>
+                        <button>See details</button>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="header">
+                    <h2>Years of experience, crafting <span>perfect</span> events with <br /> <span>passion</span> and
+                        <span>precision</span>
+                    </h2>
+                    <div class="stats">
+                        <div class="stat">
+                            <p class="stat-number">1000+</p>
+                            <p class="stat-label">Artists to choose</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-number">500+</p>
+                            <p class="stat-label">Successful events</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-number">200+</p>
+                            <p class="stat-label">Venues partnered</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-number">99%</p>
+                            <p class="stat-label">Client satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artists">
+                    <div class="artists-content">
+                        <div class="artist-info">
+                            <h3 style="color: #F37F81;">Our artists</h3>
+                            <p>Our diverse artists include musicians, dancers, and performers, each bringing unique
+                                talents
+                                and
+                                professionalism. Whether a headline act or background<br /> entertainment, our artists
+                                will
+                                elevate your event.</p>
+                            <button class="explore-button">Explore now</button>
+                        </div>
+                        <div class="artist-image">
+                            <img src="../src/woman-singing.png" alt="Artist performing">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-clients">
+                <h2>Our Clients</h2>
+            </div>
+            <div class="div-container">
+
+                <div class="image-div"></div>
+                <div class="image-div"></div>
+                <div class="image-div"></div>
+                <div class="image-div"></div>
+                <!-- <div class="image-div"></div> -->
+            </div>
+
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="../src/Untitled-2.png" alt="Person Image">
+                    </div>
+                    <div class="testimonial-content">
+                        <div>
+                            <h3>★★★★★</h3>
+                            <p>Artist Alley went above and beyond our expectations! The exceptional talent and
+                                professionalism of their artists truly brought our event to life. Our guests were
+                                thrilled,
+                                and the event was unforgettable. I highly recommend their services for any occasion.</p>
+                        </div>
+                        <div class="author">
+                            - Testimonial by Alex Martinez, Event Director
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footerContent">
+
+                    <div class="footer-head">
+                        <img src="../src/logo2.png" alt="">
+                        <p>Your source for artistic excellence, delivering creativity and talent for every occasion.</p>
+                        <div class="icons">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="quick-links">
+                        <p>Quick links</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Book an artist</a></li>
+                            <li><a href="#">Join our artist</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-us">
+                        <p>Contact us</p>
+                        <ul>
+                            <li><a href="#">1-800-123-4567</a></li>
+                            <li><a href="#">info@artistalley.com</a></li>
+                            <li><a href="#">4878, Main street, Vancouver, BC, V52TP</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; 2024 Artist Alley. All rights reserved. | privacy Policy | Terms of Service</p>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </main>
+
+</body>
+
+</html>

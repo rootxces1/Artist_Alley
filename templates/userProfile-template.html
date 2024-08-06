@@ -1,0 +1,19 @@
+<template id="artist-result-template">
+    <div class="artist-item">
+        <div class="artist-header">
+            <h4>Artist Name: <span class="artist-name"></span></h4>
+            <h4>Phone: <span class="artist-phone"></span></h4>
+        </div>
+        <div class="artist-body">
+            <p>Stage Name: <span class="stage-name"></span></p>
+
+            <div class="responseDiv">
+                <button
+                    onclick="veiwPortfolio(this.parentElement.parentElement.parentElement.getAttribute('artist-uid'))">Veiw
+                    Portfolio</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- sendUserOffer(this.parentElement.parentElement.parentElement.getAttribute('artist-uid')) -->

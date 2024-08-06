@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="../css/edit-account-artist.css">
+    <link rel="stylesheet" href="../css/headerstyle.css">
+    <link rel="stylesheet" href="../css/main-footer.css">
+
+    <script type="module" src="../javascript/utilities.js" defer></script>
+    <script type="module" src="../javascript/edit-account-artist.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Artist Alley</h1>
+        <nav>
+            <ul>
+                <li><a href="../html/homepage.html">Home</a></li>
+                <li><a href="../html/demo_book.html">Booking</a></li>
+                <li><a href="../html/demo_chat.html">chat</a></li>
+                <li><a href="" id="myProfile">profile</a></li>
+                <li><a href="" id="logoutBtn">logout</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> Let's get to know you better!</h1>
+        <div class="user-avatar">
+            <img id="profile-pic"
+                src="../src/person.png"
+                alt="user photo">
+            <input type="file" id="imageInput" accept="image/*">
+            <input type="button" id="uploadImageBtn" value="Upload">
+        </div>
+        <div class="user-info">
+            <label class="label" for="first-name">First Name: </label>
+            <input type="text" id="first-name" class="inputField">
+
+            <label class="label" for="last-name">Last Name: </label>
+            <input type="text" id="last-name" class="inputField">
+
+            <label class="label" for="stage-name">Stage Name: </label>
+            <input type="text" id="stage-name" class="inputField">
+
+            <label class="label" for="catory">Category: </label>
+            <select name="category" id="category" class="inputField">
+                <option value="" selected disabled> Pick me for</option>
+                <option value="Pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Singer">Singer</option>
+                <option value="R&B">Rythm & Blues</option>
+                <option value="Indie">Indie</option>
+                <option value="guitar">Guitar</option>
+                <option value="Comedy">Comedy Shows</option>
+                <option value="Juggling">Juggling</option>
+                <option value="Dj">DJ</option>
+                <option value="Date">Dancing</option>
+                <option value="Country">Country music</option>
+            </select>
+
+            <label class="label" for="pricing">Price starts at (hourly):  </label>
+            <input type="text" id="pricing" class="inputField" value="$">
+
+            <label class="label" for="website">Website/Portfolio:</label>
+            <input type="text" id="website" class="inputField">
+
+            <label class="label" for="location">Location:</label>
+            <input type="text" id="location" class="inputField">
+
+            <label class="label" for="summary">Introduce yourself (max 120 words):</label>
+            <textarea type="text" id="summary" class="inputTextArea" minlength="10" required> </textarea>
+
+            <input type="file" id="portfolioImageInput" accept="image/*" multiple>
+            <div id="portfolio-images">
+            </div>
+            <input type="button" id="uploadPortfolioImageBtn" value="Upload All">
+
+            <input id="saveBtn" type="submit" value="Save">
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

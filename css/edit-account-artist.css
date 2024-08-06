@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 0.75rem;
+    text-align: start;
+    margin-top: 5rem;
+}
+
+#saveBtn {
+    grid-column: 1/-1;
+    margin-bottom: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--secondary-clr);
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+}
+
+.label {
+    font-weight: bold;
+    justify-content: center;
+}
+
+.inputField {
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.inputTextArea {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input[type="file" i] {
+    align-self: center;
+}
+
+input[type="button" i] {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
+    min-width: 40%;
+    padding: 5px 0;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background-color: var(--accent-clr);
+    border-radius: 10px;
+    color: white;
+}
+
+input[type="button" i]:hover {
+    background-color: var(--secondary-clr);
+}
+
+#summary {
+    min-height: 100px;
+}
+
+#saveBtn {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 3rem;
+}
+
+#saveBtn:hover {
+    background-color: var(--accent-clr);
+    border: none;
+}
+
+.user-avatar {
+    grid-column: 1/-1;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+#imageInput {
+    width: 30%;
+    text-align: center;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+#portfolio-images {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.25rem;
+}
+
+#portfolio-images img {
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+
+.content-wrapper h1 {
+    grid-column: 1/-1;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+.content {
+    background-color: lightyellow;
+    color: black;
+    grid-column: 1/-1;
+}
+
+button {
+    padding: 1rem;
+}

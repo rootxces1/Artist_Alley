@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 0.75rem;
+    text-align: start;
+    margin-top: 5rem;
+}
+
+#saveBtn {
+    grid-column: 1/-1;
+}
+
+.label {
+    font-weight: bold;
+    justify-content: center;
+}
+
+.inputField {
+    padding: 10px;
+}
+
+#summary {
+    min-height: 100px;
+}
+
+#saveBtn {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user-avatar {
+    grid-column: 1/-1;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+#imageInput {
+    width: 30%;
+    text-align: center;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+#portfolio-images {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.25rem;
+}
+
+#portfolio-images img {
+    width: 100px;
+    height: 100px;
+}

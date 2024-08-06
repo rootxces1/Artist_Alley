@@ -1,0 +1,396 @@
+/* :root {
+    --primary-clr: rgb(56, 56, 56);
+    --secondary-clr: #89023E;
+    --accent-clr: #F37F81;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    background-image: url("../src/annie-spratt-g5DkG2ZF7ZY-unsplash.jpg");
+    background-color: rgba(37, 35, 31, 0.148);
+    mask-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signupForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    text-align: start;
+    width: 450px;
+    margin: auto;
+    box-shadow: grey 1px 1px 8px;
+    border-radius: 25px;
+    padding: 2rem 1rem;
+    background-color: rgba(62, 41, 41, 0.389);
+    color: white;
+}
+
+.inputField {
+    padding: 10px;
+    background-color: rgba(62, 41, 41, 0.509);
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+.logo {
+    text-align: center;
+}
+.logo img{
+    max-width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+#submitBtn {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--secondary-clr);
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    width: 50%;
+}
+.submit {
+    text-align: center;
+}
+
+#confirmPass {
+    margin-bottom: 1.2rem;
+}
+
+
+.label {
+    font-weight: bold;
+}
+
+#status {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: var(--accent-clr);
+    color: white;
+    display: none;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --gradient: linear-gradient(to bottom, #111415, #363a47);
+    --primary-clr: rgb(56, 56, 56);
+    --secondary-clr: #89023E;
+    --accent-clr: #F37F81;
+    --white-clr: white;
+    --blacl-clr: black;
+
+    --h1-desktop: 46px;
+    --h1-mobile: 32px;
+    --h2-desktop: 41px;
+    --h2-mobile: 28px;
+    --h3-desktop: 30px;
+    --h3-mobile: 24px;
+    --h4-desktop: 20px;
+    --h4-mobile: 16px;
+    --font-size-body-desktop: 16px;
+    --font-size-body-mobile: 16px;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0;
+    line-height: 1.4;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.mainContent,
+.headerContent,
+.footerContent,
+.artist-reviews {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Oswald;
+    font-weight: normal;
+}
+h2{
+    color: var(--accent-clr);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header .site-heading img {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    display: none;
+}
+
+.headerContent .navbar .search a,
+.headerContent .navbar .menuBtn a {
+    color: var(--white-clr);
+}
+
+.headerContent .navbar .menuBtn a {
+    color: var(--accent-clr);
+}
+
+header {
+    background: var(--gradient);
+    border-radius: 0 0 20px 20px;
+
+    padding: 1rem;
+    color: var(--white-clr);
+}
+
+header .headerContent .site-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+header .headerContent .site-heading img,
+header .headerContent .site-heading h1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+header .headerContent .site-heading h1 {
+    margin-left: 3.5rem;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.headerContent h2 {
+    font-weight: normal;
+}
+
+.headerContent h2 span {
+    color: var(--accent-clr);
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.headerContent .navbar {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: var(--accent-clr);
+    border-bottom: 1px solid var(--accent-clr);
+    transition: all .5s;
+}
+
+@media screen and (min-width: 700px) {
+    .headerContent .navbar .menuBtn {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .headerContent .site-heading,
+    .headerContent .navbar {
+        grid-column: 1/span 2;
+        grid-row: 1/span 2;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        color: var(--white-clr);
+        margin-left: 1rem;
+    }
+}
+
+footer {
+    background: linear-gradient(to bottom, #111415, #363a47);
+    color: var(--white-clr);
+    padding: 1rem;
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.footerContent a {
+    color: var(--white-clr);
+}
+
+.footerContent .footer-head {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.footerContent .footer-head img {
+    margin: auto;
+    width: 70px;
+}
+
+.footerContent .footer-head .icons ul li {
+    display: inline;
+    margin: .3rem;
+}
+
+.footerContent .copyright {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.footerContent .quick-links p,
+.footerContent .contact-us p {
+    font-weight: 700;
+}
+
+.footerContent .quick-links ul li,
+.footerContent .contact-us ul li {
+    margin-bottom: .5rem;
+}
+
+
+
+
+@media screen and (min-width:700px) {
+
+
+
+    footer .footerContent {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    footer .footerContent .footer-head {
+        text-align: left;
+        display: grid;
+        gap: 1rem;
+    }
+
+    footer .footerContent .footer-head img {
+        margin: 0;
+
+    }
+
+    footer .footerContent .copyright {
+        grid-column: 1/ span 4;
+        text-align: center;
+
+        margin-top: 2rem;
+    }
+}
+
+/* labels ------------------------ */
+
+#signupForm .logo h3{
+    text-align: center;
+}
+
+main #signupForm {
+    margin: 1.5rem;
+    padding: 1rem;
+    /* border: 1px solid rgb(103, 103, 103); */
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(174, 173, 173, 0.6);
+
+
+}
+
+main #signupForm .labels {
+    display: grid;
+}
+
+main #signupForm .labels input {
+    width: 327px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+main #signupForm .labels select {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1rem ;
+    width: 360px;
+    margin: 1rem auto;
+    background-color: transparent;
+}
+#signupForm .submit{
+    /* margin: auto; */
+text-align: center;
+margin: 1rem auto;
+}
+#signupForm .submit #submitBtn{
+background-color: var(--accent-clr);
+color: var(--white-clr);
+/* display: flex; */
+width: 250px;
+padding: .5rem;
+border-radius: 25px;
+border : transparent;
+cursor: pointer;
+}
+
+@media screen and (min-width:700px) {
+    main #signupForm {
+        max-width: 800px;
+        margin: 2rem auto;
+    }
+
+    main #signupForm .labels input {
+        width: 694px;
+    }
+    main #signupForm .labels select {
+        width: 725px;
+    }
+}

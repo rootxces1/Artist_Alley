@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+:root {
+
+    --gradient: linear-gradient(to bottom, #111415, #363a47);
+    --banner-gradient: linear-gradient(to right, #30343F, #7E88A5);
+    --primary-clr: rgb(56, 56, 56);
+    --secondary-clr: #89023E;
+    --accent-clr: #F37F81;
+    --white-clr: white;
+    --blacl-clr: black;
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0;
+    line-height: 1.4;
+}
+
+main {
+    text-align: center;
+}
+
+.search-container {
+    display: none;
+}
+
+#search {
+    cursor: pointer;
+}
+
+
+/* ========= Section 01 */
+
+.profile{
+    margin: 0 1rem;
+}
+
+.profile-div {
+    display: grid;
+    gap: 1rem;
+    box-shadow: grey 2px 2px 10px;
+    border-radius: 25px;
+    padding: 0 1rem;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.profile-div h1{
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.profile-div article {
+    display: flex;
+    flex-flow: row;
+}
+
+.profile-div article p {
+    text-align: justify;
+}
+
+
+#profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin-right: .5rem;
+}
+
+#summary {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.addressSec {
+    display: grid;
+    text-align: left;
+    margin: 0 0 0 1rem;
+}
+
+.addressSec div {
+    display: flex;
+    align-items: center;
+}
+
+.addressSec span {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.addressSec button {
+    width: 150px;
+    padding: .4rem 2rem;
+    border-radius: 15px;
+    background-color: var(--secondary-clr);
+    color: var(--white-clr);
+    cursor: pointer;
+    border: none;
+}
+
+.addressSec button:hover {
+    background-color: var(--secondary-clr);
+}
+
+/* ========= Section 02 */
+.featuredArtist{
+    max-width: 100%;
+    background-image: var(--banner-gradient);
+}
+
+.feature-banner-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.feature-banner-div h3 {
+    color: var(--white-clr);
+}
+
+.promoteArtist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;  
+}
+
+.user-artist-profile {
+    max-width: fit-content;
+    color: var(--white-clr);
+}
+
+.user-artist-profile img {
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+}
+
+.user-artist-profile p {
+    margin-block-start: 0;
+    margin: 0.5 0;
+}
+
+/* ============= Section 03 */
+.hired{
+    display: grid;
+    gap: 1rem;
+}
+
+.hiredContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: auto;
+    max-width: 1000px;
+    margin-bottom: 4rem;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.artist-descp {
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: #797979 2px 5px 10px;
+    border-radius: 25px;
+    padding: 1rem;
+    text-align: left;
+}
+
+.artist-descp .artist-briefing img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.artist-descp .artist-briefing {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.artist-descp .icons-grp {
+    text-align: end;
+    color: var(--secondary-clr);
+}
+
+.artist-descp .about-artist ul li {
+    font-family: oswald;
+}
+
+.artist-descp .about-artist ul li span {
+    font-family: 'Nunito Sans';
+}
+
+.artist-descp .artist-perf h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.artist-descp .artist-perf p {
+    border-bottom: 1px solid var(--accent-clr);
+    padding-bottom: 1rem;
+}
+
+.artist-descp .artist-perf a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--secondary-clr);
+    width: 250px;
+    margin: auto;
+    color: var(--white-clr);
+    padding: .5rem;
+    border-radius: 25px;
+}
+
+.artist-descp .artist-perf a.check {
+    background-color: var(--accent-clr);
+    color: var(--white-clr);
+    padding: .5rem;
+    border-radius: 25px;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: 2rem;
+}
+
+.artist-work .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+}
+
+.artist-work .images img {
+    border-radius: 20px;
+}
+
+.artist-work .images img:nth-of-type(1),
+.artist-work .images img:nth-of-type(2) {
+    grid-column: 1/-1;
+}
+
+@media screen and (min-width: 650px) {
+    /*section 03*/
+    .hiredContent {
+        grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 750px) {
+    /*section 02*/
+    .feature-banner-div {
+        grid-template-columns: 1fr 3fr;
+        gap: 0.5rem;
+        padding: 0 3rem;
+    }
+
+    .feature-banner-div h3{
+        align-self: center;
+    }
+
+    .promoteArtist {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+        /*section 01*/
+        .profile-div {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .profile-div h1{
+            grid-column: span 2;
+        }
+    
+        .addressSec > div{
+            justify-self: start;
+        }
+
+        #editProfile {
+            justify-self: end;   
+        }
+}
+
+@media screen and (min-width: 950px) {
+    .hiredContent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

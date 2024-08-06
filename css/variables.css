@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --gradient: linear-gradient(to bottom, #111415, #363a47);
+    --primary-clr: rgb(56, 56, 56);
+    --secondary-clr: #89023E;
+    --accent-clr: #F37F81;
+    --white-clr: white;
+    --blacl-clr: black;
+
+    --h1-desktop: 46px;
+    --h1-mobile: 32px;
+    --h2-desktop: 41px;
+    --h2-mobile: 28px;
+    --h3-desktop: 30px;
+    --h3-mobile: 24px;
+    --h4-desktop: 20px;
+    --h4-mobile: 16px;
+    --font-size-body-desktop: 16px;
+    --font-size-body-mobile: 16px;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0;
+    line-height: 1.4;
+}

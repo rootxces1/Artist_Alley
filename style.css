@@ -1,0 +1,14 @@
+main {
+    height: 700px;
+    width: 100%;
+    background-color: lemonchiffon;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login {
+    display: flex;
+    max-width: 300px;
+}

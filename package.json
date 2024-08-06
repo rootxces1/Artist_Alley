@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+<<<<<<< Updated upstream
+=======
+    "dotenv": "^16.4.5",
+>>>>>>> Stashed changes
+    "firebase": "^10.12.2"
+  }
+}

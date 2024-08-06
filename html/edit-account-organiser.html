@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../css/edit-account-organiser.css">
+    <link rel="stylesheet" href="../css/headerstyle.css">
+    <link rel="stylesheet" href="../css/main-footer.css">
+
+
+    <script type="module" src="../javascript/utilities.js" defer></script>
+    <script type="module" src="../javascript/edit-account-organiser.js" defer></script>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div class="user-data">
+            <h1>Complete Your Profile</h1>
+
+            <div class="user-avatar">
+                <img
+                src="../src/person.png"
+                id="profile-image" alt="user avatar">
+            </div>
+            <input id="start-camera" type="button" value="Start Camera">
+            <div id="camera">
+                <video id="webcam" autoplay playsinline width="320" height="240"></video>
+                <button id="capture">Capture</button>
+            </div>
+
+            <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+
+            <div class="user-info">
+                <label class="label" for="fName">First Name:</label>
+                <input type="text" id="fName" class="inputField">
+
+                <label class="label" for="lName">Last Name:</label>
+                <input type="text" id="lName" class="inputField">
+
+                <label class="label" for="orgName">Organisation Name:</label>
+                <input type="text" id="orgName" class="inputField">
+
+                <label class="label" for="role">Role:</label>
+                <input type="text" id="role" class="inputField">
+
+                <label class="label" for="phone">Phone:</label>
+                <input type="text" id="phone" class="inputField">
+
+                <label class="label" for="address">Address:</label>
+                <input type="text" id="address" class="inputField">
+
+                <label class="label" for="summary">Introduce yourself (max 120 words):</label>
+                <textarea type="text" id="summary" class="inputField" minlength="10" required> </textarea>
+            </div>
+
+            <input id="saveBtn" type="submit" value="Save">
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

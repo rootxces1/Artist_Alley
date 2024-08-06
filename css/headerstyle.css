@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --gradient: linear-gradient(to bottom, #111415, #363a47);
+    --primary-clr: rgb(56, 56, 56);
+    --secondary-clr: #89023E;
+    --accent-clr: #F37F81;
+    --white-clr: white;
+    --blacl-clr: black;
+
+    --h1-desktop: 46px;
+    --h1-mobile: 32px;
+    --h2-desktop: 41px;
+    --h2-mobile: 28px;
+    --h3-desktop: 30px;
+    --h3-mobile: 24px;
+    --h4-desktop: 20px;
+    --h4-mobile: 16px;
+    --font-size-body-desktop: 16px;
+    --font-size-body-mobile: 16px;
+
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito Sans';
+    margin: 0;
+    line-height: 1.4;
+}
+.mainContent, .headerContent, .footerContent, .artist-reviews{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2, h3{
+    font-family: Oswald;
+    font-weight: normal;
+}
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header .site-heading img{
+width: 50px;
+height: auto;
+}
+
+nav{
+    display: none;
+}
+
+.headerContent .navbar .search a, .headerContent .navbar .menuBtn a{
+    color: var(--white-clr);
+}
+.headerContent .navbar .menuBtn a{
+    color: var(--accent-clr);
+}
+
+header{
+    background:var(--gradient);
+    border-radius: 0 0 20px 20px;
+
+    padding: 1rem;
+    color: var(--white-clr);
+}
+header .headerContent .site-heading{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+header .headerContent .site-heading img, header .headerContent .site-heading h1{
+    grid-row: 1;
+    grid-column: 1;
+}
+header .headerContent .site-heading h1{
+    margin-left: 3.5rem;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.headerContent h2{
+    font-weight: normal;
+}
+.headerContent h2 span{
+    color: var(--accent-clr);
+}
+.headerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.headerContent .navbar{
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: center;
+}
+nav ul li a:hover{
+    color: var(--accent-clr);
+    border-bottom: 1px solid var(--accent-clr);
+    transition: all .5s;
+}
+@media screen and (min-width: 700px) {
+    .headerContent .navbar .menuBtn{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+   
+    .headerContent .site-heading,  .headerContent .navbar{
+        grid-column: 1/span 2;
+        grid-row: 1/span 2;
+    }
+    nav ul li{
+        display: inline;
+    }
+    nav ul li a{
+        color: var(--white-clr);
+        margin-left: 1rem;
+    }
+}
